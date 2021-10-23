@@ -1,0 +1,5 @@
+apps:
+  name: 'Sheri Blossom v4'
+  script: main.py
+  interpreter: /home/sheri/Discord-Bot/venv/bin/python3.8
+  restart_delay: 10000

@@ -1,0 +1,22 @@
+bot:
+  production: "MzQ2NzAyODkwMzY4MzY4NjQw.XcsaoQ.OBfkdE0bosX8i2F8mBEDCjBieyA"
+  development: "Mzg0NDU3MjAxOTIzNzg0NzI4.XKpGjQ.SaLkxGX67L3YTC0LjybchcOpbMY"
+
+postgres:
+  user: "sheri"
+  password: "5md4yBXX7mfPglOzKoZtELMUR2VeF6"
+
+redis:
+  password: "FklZMYPNuwvb1b2dLvs6dpkkPeA2S0iM4eisO96ugz6QXirBhDwuvSIBh2ReJING"
+
+sheri:
+  colors: [
+    0xFCBACB, 0xFDABBF, 0xFD9DB4, 0xFE8EA8, 0xFE7F9C, 0xFFC0CB,
+    0xDD96C4, 0xE19AD3, 0xF0AEED, 0xF2B7F0, 0xF6C9EE, 0xF3B9E9,
+    0xF1A8E4, 0xEF6BB0, 0xFF8899, 0xFF7788
+  ]
+  key: "zynenbzmdoiqxxi2byhwj7s9g6o1iejo5b4un6wjqrtc4w4d7p"
+
+
+mainframe:
+  key: "52ee8800dd89f917b13a4764da416c951867fa467bfc16cdd231ef02523df16f"

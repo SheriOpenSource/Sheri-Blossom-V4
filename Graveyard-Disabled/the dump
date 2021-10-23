@@ -1,0 +1,29 @@
+
+    @commands.group(name='reg')
+    async def reg_index(self, ctx):
+        if not ctx.invoked_subcommand:
+            return
+
+    @reg_index.command(name="fix")
+    async def reg_trouble_shoot(self, ctx):
+        config = self.bot.pool.fetchrow(
+            "SELECT registration_output, registration_enabled FROM botsettings_guild WHERE id=$1")
+        if config['registration_enabled']:
+            if config['registration_output'] is not None:
+                pass
+
+    @reg_index.command(name="selfclean")
+    async def reg_selfclean(self, ctx, toggle: str):
+        valid_options = {'on', "off"}
+        if toggle.lower() not in valid_options:
+            return await ctx.send("You need to say On or Off")
+        elif toggle.lower() == "on":
+            await ctx.pool.execute("UPDATE botsettings_guild SET registration_cleanup_toggle='t' WHERE id=$1",
+                                   ctx.guild.id)
+            await ctx.send(
+                "Alright, Register command will self clean itself keeping your registration channel squeaky clean")
+        elif toggle.lower() == "off":
+            await ctx.pool.execute("UPDATE botsettings_guild SET registration_cleanup_toggle='f' WHERE id=$1",
+                                   ctx.guild.id)
+            await ctx.send(
+                "Alright, Register command will not self clean itself keeping your registration channel squeaky clean")

@@ -1,0 +1,13 @@
+# This file is for storing custom emoji IDs in attempt to make it easier to fix broken emojis in the future
+status:
+  online: 643243441748180993
+  idle: 643243479715020800
+  dnd: 643243522685927444
+  streaming: 643243591354810368
+  offline: 643243619259777034
+
+  mobile:
+    online: 643243439605022763
+    idle: 643243479262298132
+    dnd: 643243522547253278
+    streaming: 643243589073240064
